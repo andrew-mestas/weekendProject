@@ -15,6 +15,7 @@
     <button id="start">START</button>
     <button id="rotate">ROTATE</button>
     <button id="mindBlown">MINDBLOWN</button>
+    <button id="reset">RESET</button>
 
   </form>
   <body>
@@ -101,6 +102,7 @@ var begin = function(){
       line.rotation.y +=0.01
       line1.rotation.y +=0.01
       line2.rotation.y += 0.01
+    }
   if(toggle2){
       if(line1.rotation.x <= 1.28)
       {
@@ -109,9 +111,6 @@ var begin = function(){
         line2.rotation.x += 0.001;
       }
     }
-
-    
-  }
 
     requestAnimationFrame( render );
     renderer.render( scene, camera );
