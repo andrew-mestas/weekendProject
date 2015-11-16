@@ -135,6 +135,11 @@ var begin = function(){
     $("#mindBlown").click(function(e){
     e.preventDefault();
     toggle2 = !toggle2;
+     if(toggle2){
+    $(this).css("background", "green");
+    } else {
+      $(this).css("background", "red");
+    }
   })
 
   </script>
